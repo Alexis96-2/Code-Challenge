@@ -25,3 +25,12 @@ graph TD;
 ```
 
 ### Explicación de la API
+
+Para obtener a todos los estudiantes de la bd.js emple el siguente codigo en el servidor:
+
+```
+app.get("/v1/students", (request, response) => {
+  const students = getStudents();
+  response.json(students);
+});
+```
