@@ -15,7 +15,7 @@ Practica 5 de la semana 4 requerimientos:
 
 ```mermaid
 graph TD;
-    BD--Reader;
+    BD-->Reader;
     Reader-->StudentController;
     StudentController-->Server: Test;
     Server-->{API};
