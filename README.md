@@ -18,7 +18,7 @@ graph TD;
     BD-->Reader;
     Reader-->StudentController;
     StudentController-->Server: Test;
-    Server-->{API};
+    Server--API;
 ```
 
 ### Explicación de la API
