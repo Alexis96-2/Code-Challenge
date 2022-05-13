@@ -17,7 +17,7 @@ Practica 5 de la semana 4 requerimientos:
 graph TD;
     BD-->Reader;
     Reader-->StudentController;
-    StudentController-->Server: Test;
+    StudentController-->Server;
     Server--API;
 ```
 
