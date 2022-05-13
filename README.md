@@ -26,11 +26,31 @@ graph TD;
 
 ### Explicación de la API
 
-Para obtener a todos los estudiantes de la bd.js emple el siguente codigo en el servidor:
+Para obtener a todos los estudiantes de la `bd.js` emple el siguente codigo en el servidor:
 
-```
+```JavaScript
 app.get("/v1/students", (request, response) => {
   const students = getStudents();
   response.json(students);
+});
+```
+
+Para obtener a todos los emails de la `bd.js` emple el siguente codigo en el servidor:
+
+```JavaScript
+app.get("/v1/students/emails", (request, response) => {
+  const students = getStudents();
+  const emails = getEmails(students);
+  response.json(emails);
+});
+```
+
+Para obtener a todos los creditos de la `bd.js` emple el siguente codigo en el servidor:
+
+```JavaScript
+app.get("/v1/students/credits", (request, response) => {
+  const students = getStudents();
+  const credits = getCredits(students);
+  response.json(credits);
 });
 ```
