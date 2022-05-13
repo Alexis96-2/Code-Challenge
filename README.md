@@ -15,10 +15,13 @@ Practica 5 de la semana 4 requerimientos:
 
 ```mermaid
 graph TD;
-    BD-->Reader;
-    Reader-->StudentController;
-    StudentController-- test -->Server;
-    Server-->API;
+    BD --> Reader;
+    Reader --> StudentController;
+    StudentController -- test --> Server;
+    Server --> A{API};
+    A --> v1/students/
+    A --> v1/students/emails
+    A --> v1/students/credits
 ```
 
 ### Explicación de la API
