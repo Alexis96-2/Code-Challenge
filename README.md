@@ -13,4 +13,12 @@ Practica 5 de la semana 4 requerimientos:
 
 ### Diseño de componentes
 
+```mermaid
+graph TD;
+    BD--Reader;
+    Reader-->StudentController;
+    StudentController-->Server: Test;
+    Server-->{API};
+```
+
 ### Explicación de la API
